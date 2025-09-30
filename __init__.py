@@ -1,111 +1,23 @@
 """
-Sistema di validazione degli errori per il gestionale
+Optimization Package
+
+Sistema di ottimizzazione completo per il Gestionale Biciclette.
+
+Autore: Gestionale Team
+Versione: 1.0.0
+Data: 2024
 """
 
-from .error_validator import (
-    ErrorValidator,
-    error_validator,
-    validate_method_call,
-    validate_gui_creation,
-    validate_database_operation,
-    safe_method_call,
-    safe_attribute_access,
-    safe_gui_creation,
-    safe_database_operation,
-    safe_tab_operation,
-    initialize_error_validation,
-    print_debug_summary
+from .performance_optimizer import PerformanceOptimizer, PerformanceMetrics
+from .cache_manager import (
+    CacheManager, DatabaseCache, UICache,
+    get_cache_manager, get_database_cache, get_ui_cache
 )
-
-from .debug_config import (
-    DebugConfig,
-    debug_config,
-    log_gui_error,
-    log_database_error,
-    log_file_error,
-    log_threading_error,
-    log_tab_error,
-    log_method_error,
-    log_attribute_error,
-    log_validation_error,
-    log_gui_warning,
-    log_database_warning,
-    log_file_warning,
-    log_threading_warning,
-    log_tab_warning,
-    log_method_warning,
-    log_attribute_warning,
-    log_validation_warning,
-    log_gui_info,
-    log_database_info,
-    log_file_info,
-    log_threading_info,
-    log_tab_info,
-    log_method_info,
-    log_attribute_info,
-    log_validation_info,
-    log_gui_debug,
-    log_database_debug,
-    log_file_debug,
-    log_threading_debug,
-    log_tab_debug,
-    log_method_debug,
-    log_attribute_debug,
-    log_validation_debug,
-    initialize_debug_system,
-    print_debug_stats
-)
+from .lazy_loader import LazyLoader, LoadState, get_lazy_loader
 
 __all__ = [
-    # ErrorValidator
-    'ErrorValidator',
-    'error_validator',
-    'validate_method_call',
-    'validate_gui_creation',
-    'validate_database_operation',
-    'safe_method_call',
-    'safe_attribute_access',
-    'safe_gui_creation',
-    'safe_database_operation',
-    'safe_tab_operation',
-    'initialize_error_validation',
-    'print_debug_summary',
-    
-    # DebugConfig
-    'DebugConfig',
-    'debug_config',
-    'log_gui_error',
-    'log_database_error',
-    'log_file_error',
-    'log_threading_error',
-    'log_tab_error',
-    'log_method_error',
-    'log_attribute_error',
-    'log_validation_error',
-    'log_gui_warning',
-    'log_database_warning',
-    'log_file_warning',
-    'log_threading_warning',
-    'log_tab_warning',
-    'log_method_warning',
-    'log_attribute_warning',
-    'log_validation_warning',
-    'log_gui_info',
-    'log_database_info',
-    'log_file_info',
-    'log_threading_info',
-    'log_tab_info',
-    'log_method_info',
-    'log_attribute_info',
-    'log_validation_info',
-    'log_gui_debug',
-    'log_database_debug',
-    'log_file_debug',
-    'log_threading_debug',
-    'log_tab_debug',
-    'log_method_debug',
-    'log_attribute_debug',
-    'log_validation_debug',
-    'initialize_debug_system',
-    'print_debug_stats'
+    'PerformanceOptimizer', 'PerformanceMetrics',
+    'CacheManager', 'DatabaseCache', 'UICache',
+    'get_cache_manager', 'get_database_cache', 'get_ui_cache',
+    'LazyLoader', 'LoadState', 'get_lazy_loader'
 ]
